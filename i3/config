@@ -1,11 +1,12 @@
 # Set font
-font pango: Noto Sans Regular 10
+# font pango: Noto Sans Regular 10
+font pango: FiraCode Nerd Font 10
 
 # Set the mod key to the winkey
 set $mod Mod4
 
 # Bind layout change
-exec --no-startup-id setxkbmap -layout 'us,ru' -variant ',,' -option 'grp:alt_shift_toggle'
+exec_always --no-startup-id setxkbmap -layout 'us,ru' -variant ',,' -option 'grp:alt_shift_toggle'
 
 # --- Workspace settings --- #
 	# Gaps settings
@@ -185,9 +186,9 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "切"
+set $ws10 " "
 
-# exec_always --no-startup-id picom -b
+exec_always --no-startup-id picom -b
 
 exec --no-startup-id dex --autostart --environment i3
 
@@ -277,50 +278,23 @@ set $yellowbrown	#e1b700
 # set $color3 #727271
 # set $color4 #ef6817
 
-set $color0 #2F2E2D
-set $color1 #4A4845
-set $color2 #7eca9c
-set $color3 #ccffbd
+set $color0    #2F2E2D
+set $color0opq #2F2E2D80
+set $color1    #4A4845
+set $color1opq #4A484580
+set $color2    #7eca9c
+set $color3    #ccffbd
 
 # define colors for windows:
-#class		        border		bground		text		indicator	child_border
-#client.focused		$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-client.focused		$color3     $color1     $color3     $color3 	$color3
-client.unfocused	$color0     $color0     $grey		$darkgrey	$color0
-client.focused_inactive	$color1 $color1     $grey		$black		$black
-client.urgent		$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
+#class		            border		bground		   text		    indicator	    child_border
+client.focused		    $color3     $color1opq     $color3      $color3     	$color3
+client.unfocused    	$color0     $color0opq     $grey		$darkgrey	    $color0
+client.focused_inactive	$color1     $color1opq     $grey		$black		    $black
+client.urgent	     	$urgentred	$urgentred	   $white		$yellowbrown	$yellowbrown
 
-############################################
-# bar settings (input comes from i3blocks) #
-############################################
-
+# Start bar 
 exec_always --no-startup-id ~/.config/i3/polybar.sh &
 
-# Start i3bar to display a workspace bar
-# (plus the system information i3status finds out, if available)
-#bar {
-#	position top
-#	#font pango: Noto Sans Regular 10
-#	font pango: JetBrains Mono Bold Italic Nerd Font Complete Mono 10
-#	status_command i3blocks -c ~/.config/i3/i3blocks.conf
-#	#i3bar_command i3bar --transparency
-#	#tray_output primary
-#	tray_padding 0
-#	strip_workspace_numbers yes
-
-#	colors {
-#	separator          $color3
-#	background         $color0
-#	statusline         $color2
-
-#      	#        		border 		        bg		txt		indicator
-#	#focused_workspace	$mediumgrey	   	$grey		$darkgrey	$purple
-#	focused_workspace	$color3			$color2         $color0		$purple
-#	active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
-#	inactive_workspace	$color1			$color1         $color3 	$purple
-#	urgent_workspace	$urgentred	    	$urgentred	$white		$purple
-#}
-#}
 
 #####################################
 # Application menu handled by rofi: #
