@@ -277,18 +277,20 @@ set $yellowbrown	#e1b700
 # set $color3 #727271
 # set $color4 #ef6817
 
-set $color0 #2F2E2D
-set $color1 #4A4845
-set $color2 #7eca9c
-set $color3 #ccffbd
+set $color0    #2F2E2D
+set $color0opt #2F2E2D80
+set $color1    #4A4845
+set $color1opt #4A484580
+set $color2    #7eca9c
+set $color3    #ccffbd
 
 # define colors for windows:
-#class		        border		bground		text		indicator	child_border
-#client.focused		$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-client.focused		$color3     $color1     $color3     $color3 	$color3
-client.unfocused	$color0     $color0     $grey		$darkgrey	$color0
-client.focused_inactive	$color1 $color1     $grey		$black		$black
-client.urgent		$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
+#class		            border		bground	    	text		 indicator	    child_border
+#client.focused	    	$lightblue	$darkblue   	$white		 $mediumgrey	$mediumgrey
+client.focused	     	$color3     $color1opt      $color3      $color3     	$color3
+client.unfocused	    $color0     $color0opt      $grey		 $darkgrey    	$color0
+client.focused_inactive	$color1     $color1opt      $grey		 $black	     	$black
+client.urgent	    	$urgentred	$urgentred	    $white		 $yellowbrown	$yellowbrown
 
 ############################################
 # bar settings (input comes from i3blocks) #
