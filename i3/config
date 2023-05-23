@@ -187,7 +187,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "切"
 
-# exec_always --no-startup-id picom -b
+exec_always --no-startup-id picom -b
 
 exec --no-startup-id dex --autostart --environment i3
 
