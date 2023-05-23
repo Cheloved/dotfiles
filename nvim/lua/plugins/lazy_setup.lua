@@ -78,7 +78,8 @@ local plugins = {
     'jiangmiao/auto-pairs',
 
     -- Showing tab lines
-    'Yggdroot/indentLine',
+    -- 'Yggdroot/indentLine',
+    'lukas-reineke/indent-blankline.nvim',
 
     -- Auto commenting with "gc"
     'tpope/vim-commentary',

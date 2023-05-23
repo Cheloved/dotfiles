@@ -9,7 +9,7 @@ exec --no-startup-id setxkbmap -layout 'us,ru' -variant ',,' -option 'grp:alt_sh
 
 # --- Workspace settings --- #
 	# Gaps settings
-	new_window pixel 1
+	new_window pixel 3
 	gaps inner 10
 	gaps outer 10
 	gaps top 35
@@ -185,7 +185,7 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "切"
+set $ws10 " "
 
 exec_always --no-startup-id picom -b
 
