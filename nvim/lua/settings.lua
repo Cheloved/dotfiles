@@ -12,8 +12,8 @@ vim.opt.smartindent = true
 -- Cursor
 vim.opt.guicursor = ""
 
--- Disable line wrapping
-vim.opt.wrap = false
+-- Enable line wrapping
+vim.opt.wrap = true 
 
 -- Search settings
 vim.opt.hlsearch = false
