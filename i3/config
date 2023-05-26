@@ -260,14 +260,14 @@ for_window [class="urxvt"] border pixel 1
 ######################################
 
 # Define colors variables:
-set $color0    #2F2E2D
-set $color0opt #2F2E2D80
+set $color0    #111A15
+set $color0opt #111A1580
 
-set $color1    #4A4845
-set $color1opt #4A484580
+set $color1    #3D594B
+set $color1opt #3D594B80
 
-set $color2    #7eca9c
-set $color3    #72b147
+set $color2    #00A650
+set $color3    #00BF5C
 # define colors for windows:
 #class		            border		bground	    	text		 indicator	    child_border
 client.focused	     	$color3     $color1opt      $color3      $color3     	$color3
