@@ -1,0 +1,18 @@
+Backgrounds:
+    Main    #111A15 
+    Shade-0 #19251F
+    Shade-1 #1C2922
+    Shade-2 #1D2B24 
+    Shade-3 #1F2E27 
+    Shade-4 #213029 
+    Shade-5 #23332B 
+    
+Main colors:
+    Accent     #00A650 
+    Accent 2   #00BF5C 
+    Secondary  #318C5D  
+    Dark       #3D594B 
+    Alert      #D78787
+    Text color #F0F0F0  
+    Dark text  #D9D9D9
+
