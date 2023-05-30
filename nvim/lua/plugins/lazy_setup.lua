@@ -106,6 +106,17 @@ local plugins = {
 
     -- Terminal emulator
     {'akinsho/toggleterm.nvim', version = "*", config = true},
+
+    -- File explorer
+    {
+      'stevearc/oil.nvim',
+      opts = {},
+      -- Optional dependencies
+      dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
+
+    -- Discord Presence
+    'andweeb/presence.nvim',
 }
 
 local opts = {}
