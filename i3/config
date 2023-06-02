@@ -92,6 +92,7 @@ exec --no-startup-id setxkbmap -layout 'us,ru' -variant ',,' -option 'grp:alt_sh
 
 	# Focus the parent container
 	bindsym $mod+a focus parent
+	bindsym $mod+Shift+a focus child 
 
 	# Open new empty workspace
 	bindsym $mod+Shift+n exec ~/.config/i3/scripts/empty_workspace
@@ -99,17 +100,17 @@ exec --no-startup-id setxkbmap -layout 'us,ru' -variant ',,' -option 'grp:alt_sh
 
 # --- Windows settings --- #
 	# Resize mode settings
-	mode "resize" {
-		bindsym Left  resize shrink width 10 px or 10 ppt
-		bindsym Right resize grow width 10 px or 10 ppt
+	# mode "resize" {
+	# 	bindsym Left  resize shrink width 10 px or 10 ppt
+	# 	bindsym Right resize grow width 10 px or 10 ppt
 
-		bindsym Up   resize shrink height 10 px or 10 ppt
-		bindsym Down resize grow height 10 px or 10 ppt
+	# 	bindsym Up   resize shrink height 10 px or 10 ppt
+	# 	bindsym Down resize grow height 10 px or 10 ppt
 
-		bindsym Return mode "default"
-		bindsym Escape mode "default"
-	}
-	bindsym $mod+r mode "resize"
+	# 	bindsym Return mode "default"
+	# 	bindsym Escape mode "default"
+	# }
+	# bindsym $mod+r mode "resize"
 
 	# Kill focused window
 	bindsym $mod+q kill
@@ -211,6 +212,10 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 
 # Desktop notifications
 exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
+
+# Rofi beats(lofi music in rofi menu)
+bindsym $mod+r exec ~/.local/bin/rofi-beats-linux
+
 
 ###############
 # system tray #
