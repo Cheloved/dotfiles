@@ -132,6 +132,9 @@ exec --no-startup-id setxkbmap -layout 'us,ru' -variant ',,' -option 'grp:alt_sh
 	# Blurred lock screen
 	bindsym $mod+l exec ~/.config/i3/scripts/blur-lock
 
+	# Redshift run
+    bindsym $mod+t exec redshift -P -l 55.756361:37.622979
+	bindsym $mod+Shift+t exec redshift -x
 # ----------------------------- #
 
 # --- i3 system bindings --- #
@@ -190,6 +193,9 @@ set $ws9 "9"
 set $ws10 " "
 
 exec_always --no-startup-id picom -b
+
+# Redshift at Moscow
+exec_always --no-startup-id redshift -P -l 55.756361:37.622979
 
 exec --no-startup-id dex --autostart --environment i3
 
@@ -300,8 +306,8 @@ bindsym $mod+d exec rofi -modi drun -show drun \
 
 ## rofi bindings for window menu ($mod+t /F10 optional disabled)
 
-bindsym $mod+t exec rofi -show window \
-		-config ~/.config/rofi/rofidmenu.rasi
+# bindsym $mod+t exec rofi -show window \
+# 		-config ~/.config/rofi/rofidmenu.rasi
 
 #bindsym F10 exec rofi -show window \
 #		-config ~/.config/rofi/rofidmenu.rasi
