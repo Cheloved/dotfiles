@@ -25,13 +25,19 @@ local plugins = {
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
 
-	-- Color scheme
+	-- Color schemes
 	{
 		'jacoborus/tender.vim',
 		config = function()
 			vim.cmd('colorscheme tender')
 		end
 	},
+    {
+        "rebelot/kanagawa.nvim",
+        confif = function()
+            vim.cmd('colorscheme kanagawa-dragon')
+        end
+    },
 
 	-- Syntax highlight
 	{
@@ -70,6 +76,12 @@ local plugins = {
 
     -- Status bar 
     'vim-airline/vim-airline',
+    {
+        'vim-airline/vim-airline-themes',
+		config = function()
+			vim.cmd('AirlineTheme wombat')
+		end
+    },
 
     -- Tagbar for code navigation
     'preservim/tagbar',
