@@ -76,12 +76,10 @@ local plugins = {
 
     -- Status bar 
     'vim-airline/vim-airline',
-    {
-        'vim-airline/vim-airline-themes',
-		config = function()
-			vim.cmd('AirlineTheme wombat')
-		end
-    },
+    'vim-airline/vim-airline-themes',
+
+    -- Transparency
+    'xiyaowong/transparent.nvim',
 
     -- Tagbar for code navigation
     'preservim/tagbar',
@@ -90,7 +88,6 @@ local plugins = {
     'jiangmiao/auto-pairs',
 
     -- Showing tab lines
-    -- 'Yggdroot/indentLine',
     'lukas-reineke/indent-blankline.nvim',
 
     -- Auto commenting with "gc"
