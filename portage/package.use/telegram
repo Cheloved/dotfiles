@@ -1,0 +1,6 @@
+# required by net-im/telegram-desktop-4.8.1-r2::gentoo
+# required by net-im/telegram-desktop (argument)
+>=media-video/ffmpeg-4.4.4-r2 vpx opus
+# required by net-im/telegram-desktop-4.8.1-r2::gentoo
+# required by net-im/telegram-desktop (argument)
+>=sys-libs/zlib-1.2.13-r1 minizip

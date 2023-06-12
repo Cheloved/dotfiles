@@ -1,0 +1,9 @@
+dev-libs/boost lzma mpi numpy python tools
+
+# required by dev-libs/boost-1.82.0-r1::gentoo[mpi]
+# required by dev-libs/boost (argument)
+>=virtual/mpi-2.0-r7 cxx threads
+# required by virtual/mpi-2.0-r7::gentoo
+# required by dev-libs/boost-1.82.0-r1::gentoo[mpi]
+# required by dev-libs/boost (argument)
+>=sys-cluster/openmpi-4.1.4-r1 cxx
