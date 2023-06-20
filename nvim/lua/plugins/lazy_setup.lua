@@ -104,6 +104,9 @@ local plugins = {
         opts = {
           -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
             animation = true,
+            icons = {
+                button = '󱎘',
+            },
           -- insert_at_start = true,
           -- …etc.
         },
