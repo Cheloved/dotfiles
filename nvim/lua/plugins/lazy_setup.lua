@@ -34,7 +34,7 @@ local plugins = {
 	},
     {
         "rebelot/kanagawa.nvim",
-        confif = function()
+        config = function()
             vim.cmd('colorscheme kanagawa-dragon')
         end
     },
@@ -44,6 +44,11 @@ local plugins = {
 		'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
 	},
+    
+    -- Emacs-like orgmode
+    {
+        'nvim-orgmode/orgmode',
+    },
 
 	-- Undo tree
 	'mbbill/undotree',
@@ -75,8 +80,12 @@ local plugins = {
 	},
 
     -- Status bar 
-    'vim-airline/vim-airline',
-    'vim-airline/vim-airline-themes',
+    {
+        'vim-airline/vim-airline',
+		dependencies = {
+            'vim-airline/vim-airline-themes',
+        },
+    },
 
     -- Transparency
     'xiyaowong/transparent.nvim',

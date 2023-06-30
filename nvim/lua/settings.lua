@@ -28,6 +28,6 @@ vim.opt.scrolloff = 8
 vim.opt.updatetime = 50
 
 -- Show column at 80'th column 
-vim.opt.colorcolumn = "80"
+-- vim.opt.colorcolumn = "80"
 
 vim.g.airline_theme = "wombat"
