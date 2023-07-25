@@ -6,9 +6,19 @@ esac
 
 export EDITOR=nvim
 
-alias neofetch="neofetch --colors 1 1 1 1 1 7 --ascii_colors 1 5"
+# alias neofetch="neofetch --colors 1 1 1 1 1 7 --ascii_colors 1 5"
+
+# curl aliases
 alias weather="curl wttr.in"
 alias myip="curl ifconfig.co"
+
+# xbps aliases
+alias install="sudo xbps-install"
+alias remove="sudo xbps-remove"
+alias query="xbps-query"
+
+# nvim clear swap files
+alias nvimclearswap="rm ~/.local/state/nvim/swap/*.swp"
 
 export PATH='/home/user/.local/bin/':$PATH
 

@@ -17,15 +17,15 @@
     ~/.config/bspwm/polybar.sh&
 
     # Autonaming desktops
-    export PATH='/home/user/bspi':$PATH
-    bspi_listen --config ${HOME}/bspi/bspi.ini &
+    export PATH='/home/user/git/bspi':$PATH
+    bspi_listen --config ${HOME}/.config/bspwm/bspi.ini &
 
     # Add swallowing feature
-    export PATH='/home/user/bspswallow':$PATH
+    export PATH='/home/user/git/bspswallow':$PATH
     pgrep bspswallow || bspswallow &
 
     # Set background
-    feh --bg-fill ${HOME}/Pictures/Wallpapers/city2.jpg &
+    feh --bg-fill ${HOME}/pictures/wallpapers/city.jpg &
 
     # Disable power saving
     xset s off -dpms &
