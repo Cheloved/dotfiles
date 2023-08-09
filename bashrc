@@ -4,7 +4,10 @@ case $- in
     *) return;;
 esac
 
+export WINEDLLPATH=/usr/lib/wine/x86_64-unix
+
 export EDITOR=nvim
+set -o vi
 
 # alias neofetch="neofetch --colors 1 1 1 1 1 7 --ascii_colors 1 5"
 
@@ -35,7 +38,8 @@ export OSH='/home/user/.oh-my-bash'
 #     OSH_THEME="sexy"
 # fi
 
-[ "$DISPLAY" ] && OSH_THEME="powerline-multiline" || OSH_THEME="sexy"
+# [ "$DISPLAY" ] && OSH_THEME="powerline-multiline" || OSH_THEME="sexy"
+[ "$DISPLAY" ] && OSH_THEME="mairan" || OSH_THEME="sexy"
 
 # Uncomment the following line to use case-sensitive completion.
 # OMB_CASE_SENSITIVE="true"
