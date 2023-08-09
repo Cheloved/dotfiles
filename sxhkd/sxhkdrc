@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-    rofi -modi drun -show drun -config ~/.config/rofi/colors-rofi-dark.rasi
+    rofi -modi drun -show drun -config ~/.cache/wal/colors-rofi-dark.rasi
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -18,7 +18,8 @@ Print
     flameshot gui
 
 super + {u,shift + u}
-    gammastep {-O 3500,-x}
+    gammastep {-O 4500,-x}
+    # gammastep {-O 3500,-x}
 
 #
 # bspwm hotkeys

@@ -25,7 +25,9 @@
     pgrep bspswallow || bspswallow &
 
     # Set background
-    feh --bg-fill ${HOME}/pictures/wallpapers/city.jpg &
+    # feh --bg-fill ${HOME}/pictures/wallpapers/city.jpg &
+    # feh --bg-fill ${HOME}/pictures/wallpapers/in_leafs1.jpg &
+    feh --bg-fill ${HOME}/pictures/wallpapers/flute2.jpg &
 
     # Disable power saving
     xset s off -dpms &
@@ -47,8 +49,10 @@ bspc config top_padding 30
     bspc config border_width 2
 
     # Colors
-    bspc config focused_border_color \#AC3F48
-    bspc config normal_border_color \#464345
+    # bspc config focused_border_color \#AC3F48
+    # bspc config normal_border_color \#464345
+    bspc config focused_border_color \#AC2915
+    bspc config normal_border_color \#201918
 
 # === Other settings === #
     bspc config split_ratio           0.52
