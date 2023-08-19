@@ -9,16 +9,9 @@ export WINEDLLPATH=/usr/lib/wine/x86_64-unix
 export EDITOR=nvim
 set -o vi
 
-# alias neofetch="neofetch --colors 1 1 1 1 1 7 --ascii_colors 1 5"
-
 # curl aliases
 alias weather="curl wttr.in"
 alias myip="curl ifconfig.co"
-
-# xbps aliases
-alias install="sudo xbps-install"
-alias remove="sudo xbps-remove"
-alias query="xbps-query"
 
 # nvim clear swap files
 alias nvimclearswap="rm ~/.local/state/nvim/swap/*.swp"
@@ -30,13 +23,6 @@ export OSH='/home/user/.oh-my-bash'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-
-# if [ "$DISPLAY" ];
-# then
-#     OSH_THEME="powerline-multiline"
-# else
-#     OSH_THEME="sexy"
-# fi
 
 # [ "$DISPLAY" ] && OSH_THEME="powerline-multiline" || OSH_THEME="sexy"
 [ "$DISPLAY" ] && OSH_THEME="mairan" || OSH_THEME="sexy"
@@ -146,10 +132,10 @@ plugins=(
 source "$OSH"/oh-my-bash.sh
 
 # Use ble.sh
-source ~/.local/share/blesh/ble.sh
+# source ~/.local/share/blesh/ble.sh
 
 # Change completion color
-ble-face auto_complete='fg=245,underline,italic'
+# ble-face auto_complete='fg=245,underline,italic'
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -180,3 +166,6 @@ ble-face auto_complete='fg=245,underline,italic'
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 (cat ~/.cache/wal/sequences &)
+
+# Autostart X server
+[ $(tty) = "/dev/tty1" ] && startx
