@@ -19,7 +19,14 @@ Print
 
 super + {u,shift + u}
     gammastep {-O 4500,-x}
-    # gammastep {-O 3500,-x}
+
+# Toggle mute
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Change volume
+XF86Audio{Raise,Lower}Volume
+    pactl set-sink-volume @DEFAULT_SINK@ {+,-}5%
 
 #
 # bspwm hotkeys
