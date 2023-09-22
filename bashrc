@@ -27,9 +27,10 @@ export OSH='/home/user/.oh-my-bash'
 
 alias note="nvim ~/notes"
 
-alias fd='cd $(find . -type d | fzf --preview="echo List of files in {} && ls -lah {}")'
-alias ff='cd `dirname $(find . -type f | fzf --preview="less {}")`'
 alias fm='man -l $(find /usr/share/man -type f | fzf --preview="man -l {}")'
+
+alias ff='file=$(find . -type f | fzf --preview="less {}"); dir=$(dirname $file); cd $dir && echo $file'
+alias fd='dir=$(find . -type d | fzf --preview="less {}"); cd $dir && echo $dir'
 
 
 # Set name of the theme to load. Optionally, if you set this to "random"
