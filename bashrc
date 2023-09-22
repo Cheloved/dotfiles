@@ -1,3 +1,6 @@
+# Set LFS variable
+export LFS=/mnt/lfs
+
 # Enable the subsequent settings only in interactive sessions
 case $- in
   *i*) ;;
@@ -7,6 +10,7 @@ esac
 export WINEDLLPATH=/usr/lib/wine/x86_64-unix
 
 export EDITOR=nvim
+export BROWSER=brave
 set -o vi
 
 # curl aliases
@@ -20,6 +24,13 @@ export PATH='/home/user/.local/bin/':$PATH
 
 # Path to your oh-my-bash installation.
 export OSH='/home/user/.oh-my-bash'
+
+alias note="nvim ~/notes"
+
+alias fd='cd $(find . -type d | fzf --preview="echo List of files in {} && ls -lah {}")'
+alias ff='cd `dirname $(find . -type f | fzf --preview="less {}")`'
+alias fm='man -l $(find /usr/share/man -type f | fzf --preview="man -l {}")'
+
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
