@@ -44,7 +44,7 @@ local plugins = {
 		'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
 	},
-    
+
     -- Emacs-like orgmode
     {
         'nvim-orgmode/orgmode',
@@ -80,12 +80,8 @@ local plugins = {
 	},
 
     -- Status bar 
-    {
-        'vim-airline/vim-airline',
-		dependencies = {
-            'vim-airline/vim-airline-themes',
-        },
-    },
+    'nvim-lualine/lualine.nvim',
+    'nvim-tree/nvim-web-devicons',
 
     -- Transparency
     'xiyaowong/transparent.nvim',

@@ -22,8 +22,8 @@ cmp.setup({
     ['<C-Space>'] = cmp.mapping.complete(),
 
 	-- Listing items
-	['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-	['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+	['<S-Tab>'] = cmp.mapping.select_prev_item(cmp_select),
+	['<Tab>'] = cmp.mapping.select_next_item(cmp_select),
 
     -- Navigate between snippet placeholder
     ['<C-f>'] = cmp_action.luasnip_jump_forward(),
