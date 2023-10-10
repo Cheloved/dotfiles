@@ -1,7 +1,6 @@
 require("plugins.configs.nerdtree")
 require("plugins.configs.telescope")
 require("plugins.configs.treesitter")
-require("plugins.configs.orgmode")
 require("plugins.configs.undotree")
 require("plugins.configs.lsp")
 require("plugins.configs.tagbar")
