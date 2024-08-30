@@ -32,7 +32,7 @@ alias fm='man -l $(find /usr/share/man -type f | fzf --preview="man -l {}")'
 alias ff='file=$(find . -type f | fzf --preview="less {}"); dir=$(dirname $file); cd $dir && echo $file'
 alias fd='dir=$(find . -type d | fzf --preview="less {}"); cd $dir && echo $dir'
 
-alias inst='doas pacman -S $(pacman -Ss | grep -E "^[A-z]+/.+ " | fzf --multi | cut -d\  -f1)'
+alias inst='doas pacman -S $(pacman -Ss | grep -E "^[A-z]+/.+ " | fzf --multi | cut -d " " -f1)'
 alias remo='doas pacman -Rn $(pacman -Q | fzf --multi | cut -d " " -f1)'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
